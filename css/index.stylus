@@ -1,0 +1,5 @@
+.container
+  width 50%
+  border 1em
+  border-color black
+  padding-top 30em
