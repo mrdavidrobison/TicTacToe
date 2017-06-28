@@ -6,6 +6,11 @@
   border-color black
   h1
     margin-top 1em
+  #chooseXO
+    #x
+      font-size 2em
+    #o
+      font-size 2em
   
 .col
   padding 2em
