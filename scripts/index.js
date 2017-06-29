@@ -1,13 +1,36 @@
 $(document).ready(function(){
 
-  var count = 0;
+  var player;
+  var totalCount = 0;
+  var player1Count = 0;
+  var player2Count = 0;
   
   $("#playGame").show();
-  $("#grid").hide();
   $("#player1").hide();
   $("#player2").hide();
+  $("#grid").hide();
   
-  $(".btn-success").click(function(){
+  $("#begin").click(function(){
+    $("#player1").show();
+    $("#playGame").hide();
+  })
+
+  $("#1x, #1o").click(function(){
+    $("#player2").show();
+    $("#player1").hide();
+  })
+
+  $("#2x, #2o").click(function(){
+    $("#grid").show();
+    $("#player2").hide();
+  })
+
+  $("#begin").click(function(){
+    $("#player1").show();
+    $("#playGame").hide();
+  })
+
+  $("#begin").click(function(){
     $("#player1").show();
     $("#playGame").hide();
   })
