@@ -1,3 +1,9 @@
+body
+  background-image url('https://i.stack.imgur.com/LPkBx.jpg')
+  background-color grey
+  background-size cover
+  background-blend-mode screen
+
 .container
   width 50%
   border-color black
