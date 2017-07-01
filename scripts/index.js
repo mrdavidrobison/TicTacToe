@@ -2,7 +2,6 @@ $(document).ready(function(){
 
   var player1;
   var player2;
-  var totalCount = 0;
   var turn=true;
 
   // declare the first page 
@@ -33,9 +32,9 @@ $(document).ready(function(){
     player2 = "X";
   })
 
-  // determine number of clicks allowable and switch turns
+  // switch turns after each click and replace content with player sign
   $("#1").click(function(){
-    totalCount++;
+    
     if (turn === true){
       $("#1").html(player1);
       $("h2").html("Player 2 go!");
@@ -48,7 +47,7 @@ $(document).ready(function(){
   })
 
   $("#2").click(function(){
-    totalCount++;
+    
     if (turn === true){
       $("#2").html(player1);
       $("h2").html("Player 2 go!");
@@ -61,7 +60,7 @@ $(document).ready(function(){
   })
 
   $("#3").click(function(){
-    totalCount++;
+    
     if (turn === true){
       turn=false;
       $("#3").html(player1);
@@ -74,7 +73,7 @@ $(document).ready(function(){
   })
 
   $("#4").click(function(){
-    totalCount++;
+    
     if (turn === true){
       turn=false;
       $("#4").html(player1);
@@ -87,7 +86,7 @@ $(document).ready(function(){
   })
 
   $("#5").click(function(){
-    totalCount++;
+    
     if (turn === true){
       turn=false;
       $("#5").html(player1);
@@ -100,7 +99,7 @@ $(document).ready(function(){
   })
 
   $("#6").click(function(){
-    totalCount++;
+    
     if (turn === true){
       turn=false;
       $("#6").html(player1);
@@ -113,7 +112,7 @@ $(document).ready(function(){
   })
 
   $("#7").click(function(){
-    totalCount++;
+    
     if (turn === true){
       turn=false;
       $("#7").html(player1);
@@ -126,7 +125,7 @@ $(document).ready(function(){
   })
 
   $("#8").click(function(){
-    totalCount++;
+    
     if (turn === true){
       turn=false;
       $("#8").html(player1);
@@ -139,7 +138,7 @@ $(document).ready(function(){
   })
 
   $("#9").click(function(){
-    totalCount++;
+    
     if (turn === true){
       turn=false;
       $("#9").html(player1);
@@ -150,9 +149,4 @@ $(document).ready(function(){
       $("h2").html("Player 1 go!");
     }    
   })
-
-  // game over after 9 clicks
-  if (totalCount = 9){
-    $("h2").html("GAME OVER!");
-  } 
 })
