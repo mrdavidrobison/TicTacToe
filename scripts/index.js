@@ -3,6 +3,7 @@ $(document).ready(function(){
   var player1;
   var player2;
   var turn=true;
+  var count=0;
 
   // declare the first page 
   $("#grid").hide();
@@ -34,7 +35,7 @@ $(document).ready(function(){
 
   // switch turns after each click and replace content with player sign
   $("#1").click(function(){
-    
+    count++;
     if (turn === true){
       $("#1").html(player1);
       $("h2").html("Player 2 go!");
@@ -47,7 +48,7 @@ $(document).ready(function(){
   })
 
   $("#2").click(function(){
-    
+    count++;
     if (turn === true){
       $("#2").html(player1);
       $("h2").html("Player 2 go!");
@@ -60,7 +61,7 @@ $(document).ready(function(){
   })
 
   $("#3").click(function(){
-    
+    count++;
     if (turn === true){
       turn=false;
       $("#3").html(player1);
@@ -73,7 +74,7 @@ $(document).ready(function(){
   })
 
   $("#4").click(function(){
-    
+    count++;
     if (turn === true){
       turn=false;
       $("#4").html(player1);
@@ -86,7 +87,7 @@ $(document).ready(function(){
   })
 
   $("#5").click(function(){
-    
+    count++;
     if (turn === true){
       turn=false;
       $("#5").html(player1);
@@ -99,7 +100,7 @@ $(document).ready(function(){
   })
 
   $("#6").click(function(){
-    
+    count++;
     if (turn === true){
       turn=false;
       $("#6").html(player1);
@@ -112,7 +113,7 @@ $(document).ready(function(){
   })
 
   $("#7").click(function(){
-    
+    count++;
     if (turn === true){
       turn=false;
       $("#7").html(player1);
@@ -125,7 +126,7 @@ $(document).ready(function(){
   })
 
   $("#8").click(function(){
-    
+    count++;
     if (turn === true){
       turn=false;
       $("#8").html(player1);
@@ -138,7 +139,7 @@ $(document).ready(function(){
   })
 
   $("#9").click(function(){
-    
+    count++;
     if (turn === true){
       turn=false;
       $("#9").html(player1);
@@ -149,4 +150,9 @@ $(document).ready(function(){
       $("h2").html("Player 1 go!");
     }    
   })
+
+  if (count > 8){
+    $("#h2").text("Game Over!!");
+  }
+
 })
